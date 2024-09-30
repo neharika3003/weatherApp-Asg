@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url("img/backgroundWeatherApp.webp");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.header h4 {
+  color: #da1e4e;
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-family: 'Ubuntu', serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-main {
+  min-height: 20vh;
+  max-width: 90vw;
+  width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background: linear-gradient(to top, #92fefe, #c0dfec);
+}
+
+.app-main > * {
+  margin-bottom: 15px;
+}
+
+.input-box {
+  width: 85%;
+  background: #f9f9f9;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  outline: none;
+}
+
+.weather-body {
+  color: #fff;
+  padding: 20px;
+  line-height: 1.5rem;
+  border-radius: 10px;
+  background-color: #eff1f3;
+  display: none;
+  background: linear-gradient(to top, #441eda, #3abce4);
+}
+
+.location-details {
+  font-weight: bold;
+}
+
+.weather-status {
+  padding: 15px;
+}
+
+.temp {
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather {
+  margin-top: 20px;
+  font-size: 1.8rem;
+}
+
+.min-max {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.day_details {
+  padding: 15px;
+}
+
+.sun-detail,
+.basic {
+  font-size: 0.9rem;
+}
+
+#weather-icon {
+  color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .app-main {
+    width: 90%;
+    padding: 15px;
+  }
+  .temp {
+    font-size: 3rem;
+  }
+  .weather {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app-main {
+    width: 95%;
+    padding: 10px;
+  }
+  body {
+    min-height: 100vh;
+  }
+  .temp {
+    font-size: 2.5rem;
+  }
+  .weather {
+    font-size: 1.4rem;
+  }
+}
+
